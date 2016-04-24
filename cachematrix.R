@@ -1,9 +1,10 @@
 #Coursera Data Science Specialization
 #R Programming
-#Assignment 2
+#Programming Assignment 2: Lexical Scoping
+#
 #
 #Author: Jose Pineda
-#
+#Date: April '16
 
 #makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
 
@@ -21,9 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
        getinv = getinv)
 }
 
-#cacheSolve: This function computes the inverse of the special "matrix" returned
-#by makeCacheMatrix above. If the inverse has already been calculated (and the
-#matrix has not changed), then cacheSolve should retrieve the inverse from the cache.
+#cacheSolve: This function will compute the inverse of the special "matrix" returned
+#by makeCacheMatrix above. cacheSolve should retrieve the inverse from the cache if the inverse has already been calculated (and the
+#matrix has not changed).
 
 cacheSolve <- function(x, ...) {
   I <- x$getinv()
